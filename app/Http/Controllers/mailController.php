@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\userController;
-
+use App\Http\Helpers\responseHelper;
 
 class mailController extends Controller
 {
@@ -86,7 +86,7 @@ class mailController extends Controller
                     ]);
                     dd($e);
                     }
-                    return redirect()->back()->with('message', userController::throwMessage('credentialError'));
+                    return redirect()->back()->with('message', responseHelper::throwMessage('credentialError'));
                    
         
         

@@ -3,15 +3,15 @@
 <title>Holopals.login</title>
 @endsection
 @section('bodyContent')
-
-<main class="main  border-rounded shadow-sm bg-dark bg-transparent " >
+<div class="background-wrapper">
+<main class="main shadow-sm " >
   <div class="forms">
   <form method="post" action="{{route('login')}}" enctype="multipart/form-data">
   @csrf
   <p class="fs-2 col-lg-auto me-lg-3">HOLO<span>PALS</span></p>
     <h1 class="h3 mb-3 fw-normal fs-5">Please login </h1>
 
-    <div class="form-floating">
+    <div class="form-floating mt-4 text-black w-50 mx-auto">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" value="{{old('email')}}" >
       <label for="floatingInput">Email address</label>
     </div>
@@ -21,7 +21,7 @@
       </li>
     @enderror
 
-    <div class="form-floating">
+    <div class="form-floating mt-4 text-black w-50 mx-auto">
       <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
       <label for="floatingPassword">Password</label>
     </div>
@@ -50,12 +50,10 @@
        
     </ul>
 
-    <button class="w-100 btn btn-lg btn-danger mt-4" type="submit" name="submit">	
+    <button class="btn btn-lg btn-danger mt-4 w-25 mx-auto" type="submit" name="submit">	
     	Login
     </button>
 
-    
-  
         <div class=" offset-md-1 mb-2 mt-2">
                 <div class="form-check">
                     <input class="form-check-input " type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
@@ -80,4 +78,5 @@
   </form>
   </div>
 </main>
+</div>
 @endsection

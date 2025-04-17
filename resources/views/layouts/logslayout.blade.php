@@ -71,7 +71,6 @@
       @media (max-width: 700px )
       {
         .forms{
-     
         margin-top: 5rem;
         margin-right: 5rem;
         margin-left: 5rem;
@@ -84,7 +83,6 @@
       @media (max-width: 500px )
       {
         .forms{
-     
         margin-top: 5rem;
         margin-right: 2rem;
         margin-left: 2rem;

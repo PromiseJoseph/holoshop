@@ -1,9 +1,6 @@
 @extends('layouts.app')
 @section('headLink')
 @endsection
-@section('content')
-
-
 @section('headswiper')
 <!-- ======= Intro Section ======= -->
 <div class="intro intro-carousel swiper position-relative">
@@ -89,6 +86,8 @@
 <div class="swiper-pagination"></div>
 </div><!-- End Intro Section -->
 @endsection
+@section('content')
+
 <!-- ======= Services Section ======= -->
 <section class="section-services section-t8">
       <div class="container">
